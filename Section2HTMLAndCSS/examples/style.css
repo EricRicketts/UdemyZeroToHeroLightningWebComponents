@@ -1,0 +1,24 @@
+div {
+  color: red;
+}
+
+#username {
+  font-size: 30px;
+  color: green;
+}
+
+.para {
+  border: 8px solid yellow;
+}
+
+#box_model_demo {
+  padding: 16px;
+  border: 2px solid;
+  margin: 16px;
+  color: black;
+}
+
+#box_model_demo2 {
+  border: 1px solid;
+  margin-top: 16px;
+}
