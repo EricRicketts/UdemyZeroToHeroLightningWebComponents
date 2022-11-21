@@ -26,4 +26,23 @@ function varScope() {
   return output; // [4, 8, 10, 1, 3]
 }
 
-export { x, addTwo, addThree, varScope };
+function letScope() {
+  var output = [];
+
+  let x = 1;
+
+  if (2 === 2) {
+    output.push(x); // block scoped x declared outside of block has visibility into the block
+    x = 2;
+    output.push(x);
+  }
+
+  if (3 === 3) {
+    let x1 = 3;
+    output.push(x1); // x1 now visible outside of this scope
+  }
+
+  return output; // [1, 2, 3]
+}
+
+export { x, addTwo, addThree, varScope, letScope };
