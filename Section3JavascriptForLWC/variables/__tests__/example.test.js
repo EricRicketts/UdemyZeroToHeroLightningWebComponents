@@ -1,4 +1,4 @@
-import { x, addTwo, addThree } from "../src/example";
+import { x, addTwo, addThree, varScope } from "../src/example";
 
 describe("Test import constants and functions", () => {
   test("should have imported const x with value 4", () => {
@@ -11,5 +11,9 @@ describe("Test import constants and functions", () => {
 
   test("should add 3 to 6 for 9", () => {
     expect(addThree(6)).toBe(9);
+  });
+
+  test("var scoping", () => {
+    expect(varScope()).toEqual([4, 8, 10, 1, 3]);
   });
 });
