@@ -12,6 +12,10 @@ describe("Test String Methods", () => {
     expect(str.indexOf("hope")).toBe(7);
   });
 
+  test("should return -1 if indexOf finds no match", () => {
+    expect(str.indexOf("zoo")).toBe(-1);
+  });
+
   test("should have default position of startWith at index 0", () => {
     expect(str.startsWith("Let")).toBe(true);
   });
