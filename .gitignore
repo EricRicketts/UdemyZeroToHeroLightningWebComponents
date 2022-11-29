@@ -4,7 +4,6 @@
 .settings/
 .metadata
 build.properties
-config
 
 # Apex Log as optional
 apex-scripts/log
