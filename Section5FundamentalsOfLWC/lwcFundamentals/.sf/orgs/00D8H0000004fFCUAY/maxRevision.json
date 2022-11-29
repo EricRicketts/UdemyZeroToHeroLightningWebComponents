@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 65,
+  "serverMaxRevisionCounter": 69,
   "sourceMembers": {
     "Profile__Read Only": {
       "serverRevisionCounter": 19,
@@ -62,26 +62,26 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__helloWorld": {
-      "serverRevisionCounter": 62,
-      "lastRetrievedFromServer": 62,
+      "serverRevisionCounter": 66,
+      "lastRetrievedFromServer": 66,
       "memberType": "LightningComponentBundle",
       "isNameObsolete": false
     },
     "LightningComponentResource__helloWorld/helloWorld.js": {
-      "serverRevisionCounter": 63,
-      "lastRetrievedFromServer": 63,
+      "serverRevisionCounter": 67,
+      "lastRetrievedFromServer": 67,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__helloWorld/helloWorld.js-meta.xml": {
-      "serverRevisionCounter": 64,
-      "lastRetrievedFromServer": 64,
+      "serverRevisionCounter": 68,
+      "lastRetrievedFromServer": 68,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__helloWorld/helloWorld.html": {
-      "serverRevisionCounter": 65,
-      "lastRetrievedFromServer": 65,
+      "serverRevisionCounter": 69,
+      "lastRetrievedFromServer": 69,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     }
