@@ -1,6 +1,16 @@
 <template>
-  <div>
-    <p>Hello World</p>
-    <p>{fullname}</p>
-  </div>   
+  <lightning-card  title="Two Way Data Binding">
+    <div class="slds-var-m-around_medium">
+      <lightning-input
+        type="text"
+        label="Enter Course Name"
+        onkeyup={changeHandler}>
+      </lightning-input>
+      <div>
+        <p>Hello World</p>
+        <p>{fullname}</p>
+        <p>LWC is a form of {title}</p>
+      </div>   
+    </div>
+  </lightning-card>
 </template>
