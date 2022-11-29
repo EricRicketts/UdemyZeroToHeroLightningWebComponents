@@ -1,0 +1,89 @@
+{
+  "serverMaxRevisionCounter": 49,
+  "sourceMembers": {
+    "Profile__Read Only": {
+      "serverRevisionCounter": 19,
+      "lastRetrievedFromServer": null,
+      "memberType": "Profile",
+      "isNameObsolete": false
+    },
+    "Profile__Admin": {
+      "serverRevisionCounter": 18,
+      "lastRetrievedFromServer": null,
+      "memberType": "Profile",
+      "isNameObsolete": false
+    },
+    "Profile__Custom: Sales Profile": {
+      "serverRevisionCounter": 22,
+      "lastRetrievedFromServer": null,
+      "memberType": "Profile",
+      "isNameObsolete": false
+    },
+    "Profile__Custom: Marketing Profile": {
+      "serverRevisionCounter": 21,
+      "lastRetrievedFromServer": null,
+      "memberType": "Profile",
+      "isNameObsolete": false
+    },
+    "Profile__Custom: Support Profile": {
+      "serverRevisionCounter": 20,
+      "lastRetrievedFromServer": null,
+      "memberType": "Profile",
+      "isNameObsolete": false
+    },
+    "CustomTab__LWC_Fundamentals": {
+      "serverRevisionCounter": 17,
+      "lastRetrievedFromServer": null,
+      "memberType": "CustomTab",
+      "isNameObsolete": false
+    },
+    "CustomApplication__EricRicketts": {
+      "serverRevisionCounter": 24,
+      "lastRetrievedFromServer": null,
+      "memberType": "CustomApplication",
+      "isNameObsolete": false
+    },
+    "FlexiPage__LWCFundamentalsFirstApp_UtilityBar": {
+      "serverRevisionCounter": 6,
+      "lastRetrievedFromServer": null,
+      "memberType": "FlexiPage",
+      "isNameObsolete": false
+    },
+    "FlexiPage__LWC_Fundamentals": {
+      "serverRevisionCounter": 32,
+      "lastRetrievedFromServer": null,
+      "memberType": "FlexiPage",
+      "isNameObsolete": false
+    },
+    "AppMenu__AppSwitcher": {
+      "serverRevisionCounter": 7,
+      "lastRetrievedFromServer": null,
+      "memberType": "AppMenu",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__helloWorld": {
+      "serverRevisionCounter": 46,
+      "lastRetrievedFromServer": 46,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__helloWorld/helloWorld.js": {
+      "serverRevisionCounter": 47,
+      "lastRetrievedFromServer": 47,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__helloWorld/helloWorld.js-meta.xml": {
+      "serverRevisionCounter": 48,
+      "lastRetrievedFromServer": 48,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__helloWorld/helloWorld.html": {
+      "serverRevisionCounter": 49,
+      "lastRetrievedFromServer": 49,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    }
+  }
+}
