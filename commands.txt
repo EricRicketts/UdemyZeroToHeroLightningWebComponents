@@ -1,7 +1,10 @@
 1.  to create a project from the command line: sfdx force:project:create -n "project_name"
 2.  to authorize a project with our dev hub: sfdx force:auth:web:login -a alias_name -d 
+for Section 5 sfdx force:auth:web:login -a ericrickettssalesforce -d
 3.  to create the scratch org from the command line: sfdx force:org:create -a alias_for_scratch_org -d days -f (path to project file) config/project-scratch-def.json -s (set it to default user name)
+for Section 5 sfdx force:org:create -a ericRickettsScratchOrgOne -d 30 -f config/project-scratch-def.json -s
 4.  Before issuing the above command go to your project-scratch-def.json file and under the "features" key put
 the following key/value pair: "hasSampleData": true,
 5.  Once created to open the scratch org: sfdx force:org:open
 6.  to deploy all the project to the scratch org: sfdx force:source:push
+7.  To create an LWC: sfdx force:lightning:component:create --type lwc -n helloWorld or you can go to the command palette and type SFDX lightning and it should allow you to chose to create an lwc
