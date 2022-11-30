@@ -7,7 +7,7 @@
         onkeyup={changeHandler}
       >
       </lightning-input>
-      <div>
+      <div class="first-div-with-text">
         <p>Hello World</p>
         <p>{fullname}</p>
         <p>LWC is a form of {title}</p>
@@ -22,13 +22,14 @@
         onkeyup={trackHandler}
       >
       </lightning-input>
-      <div>
-        <p>{address.city} is my city</p>
+      <div class="second-div-with-text">
+        <p>{address.city} is my city in the country of {address.country}</p>
+        <p>My postal code is {address.postcode}</p>
       </div>
     </div>
   </lightning-card>
   <lightning-card title="Getter Demo">
-    <div class="slds-var-m-around_medium">
+    <div class="slds-var-m-around_medium third-div-with-text">
       <p>The user's full name is: {firstUser}.</p>
       <p>
         The two numbers {num1} and {num2} multiplied together are:
