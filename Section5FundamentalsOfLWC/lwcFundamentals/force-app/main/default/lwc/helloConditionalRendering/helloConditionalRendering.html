@@ -1,0 +1,30 @@
+<template>
+  <lightning-card title="Conditional Rendering">
+    <div class="slds-var-m-around_medium">
+      <lightning-button
+        variant="brand"
+        label="Toggle Data"
+        title="Toggle Data"
+        onclick={handleClick}
+        class="slds-var-m-left_x-small"
+      ></lightning-button>
+      <template if:true={isVisible}>
+        <p>Toggle is True!! Welcome to the Zero To Hero Series!!</p>
+      </template>
+      <template if:false={isVisible}>
+        <p>Toggle is False!! We are taking a break from the instruction.</p>
+      </template>
+      <lightning-input
+        type="text"
+        label="Type hello to see the data"
+        onkeyup={changeHandler}
+      ></lightning-input>
+      <template if:true={helloMethod}>
+        <div>
+          <p>Hurray!! You have typed correctly!</p>
+        </div>
+      </template>
+      <div></div>
+    </div>
+  </lightning-card>
+</template>
