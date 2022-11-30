@@ -2,7 +2,14 @@ import { createElement } from "lwc";
 import HelloWorld from "c/helloWorld";
 
 describe("c-hello-world", () => {
-  let expected, results;
+  let expected, results, element, div, paragraphs;
+  beforeEach(() => {
+    element = createElement("c-hello-world", {
+      is: HelloWorld
+    });
+    document.body.appendChild(element);
+  });
+
   afterEach(() => {
     // The jsdom instance is shared across test cases in a single file so reset the DOM
     while (document.body.firstChild) {
@@ -13,22 +20,50 @@ describe("c-hello-world", () => {
   describe("Initial Rendering", () => {
     it("the first div with text should render the title and full name properties", () => {
       // Arrange
-      const element = createElement("c-hello-world", {
-        is: HelloWorld
-      });
       expected = ["Hello World", "Elmer Fudd", "LWC is a form of aura"];
 
       // Act
-      document.body.appendChild(element);
-      const div = element.shadowRoot.querySelector("div.first-div-with-text");
-      const paragraphs = Array.from(div.children);
+      div = element.shadowRoot.querySelector("div.first-div-with-text");
+      paragraphs = Array.from(div.children);
       results = [
         paragraphs[0].textContent,
         paragraphs[1].textContent,
         paragraphs[2].textContent
       ];
+
       // Assert
-      // const div = element.shadowRoot.querySelector('div');
+      expect(results).toEqual(expected);
+    });
+
+    it("the second div with text should render the country, city, and postal code", () => {
+      // Arrange
+      expected = [
+        "Melbourne is my city in the country of Australia",
+        "My postal code is 3008"
+      ];
+
+      // Act
+      div = element.shadowRoot.querySelector("div.second-div-with-text");
+      paragraphs = Array.from(div.children);
+      results = [paragraphs[0].textContent, paragraphs[1].textContent];
+
+      // Assert
+      expect(results).toEqual(expected);
+    });
+
+    it("the third div with text should render the user's full name and the product of two numbers", () => {
+      // Arrange
+      expected = [
+        "The user's full name is: John Random Doe",
+        "The two numbers 10 and 20 multiplied together are: 200"
+      ];
+
+      // Act
+      div = element.shadowRoot.querySelector("div.third-div-with-text");
+      paragraphs = Array.from(div.children);
+      results = [paragraphs[0].textContent, paragraphs[1].textContent];
+
+      // Assert
       expect(results).toEqual(expected);
     });
   });
