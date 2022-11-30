@@ -13,10 +13,20 @@
       <template iterator:ceo={ceoList}>
         <div key={ceo.value.id}>
           <ul class="slds-has-dividers_around-space">
+            <template if:true={ceo.first}>
+              <p class="slds-box slds-theme_shade">
+                <strong>List of Well Known Companies and Their CEO's</strong>
+              </p>
+            </template>
             <li class="slds-item">
               The CEO for <strong>{ceo.value.company}</strong> is
               {ceo.value.name}
             </li>
+            <template if:true={ceo.last}>
+              <p class="slds-box slds-theme_shade">
+                <strong>Thanks for reading the list</strong>
+              </p>
+            </template>
           </ul>
         </div>
       </template>
