@@ -67,4 +67,29 @@ describe("c-hello-world", () => {
       expect(results).toEqual(expected);
     });
   });
+
+  describe("Test Input Fields", () => {
+    let inputs, firstInput, secondInput;
+    it("should change the title upon user entry", () => {
+      // Arrange
+      expected = "LWC is a form of HTML Components";
+      inputs = element.shadowRoot.querySelectorAll("lightning-input");
+      firstInput = inputs.item(0);
+      const selectedParagraph = element.shadowRoot.querySelector(
+        "div.first-div-with-text :nth-child(3)"
+      );
+
+      // Act
+      const str = "HTML Component";
+      const arrayOfChars = Array.from(str.split(""));
+      firstInput.addEventListener("keypress", (event) => {});
+      arrayOfChars.forEach((char) => {
+        firstInput.dispatchEvent("keypress", { key: `${char}` });
+      });
+      results = selectedParagraph.textContent;
+
+      // Assert
+      expect(results).toBe(expected);
+    });
+  });
 });
